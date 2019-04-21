@@ -27,16 +27,14 @@ public class Listener implements ApplicationListener<TransactionEvent> {
     AccountInfo accountInfo = AccountInfo.getInstance();
     // TODO:: cleanup design below with factory of visitors
 
-//    if (transactionEvent.getEventType() == EventTypes.AMOUNT_SENT
-//        && accountInfo.getUuid().compareTo(transactionEvent.getSender()) = 0) {
-//      System.out.println("SEND event");
-//    } else
-      if (transactionEvent.getEventType() == EventTypes.AMOUNT_SENT
-               && accountInfo.getUuid()
-                      .compareTo(UUID
-                          .fromString(transactionEvent.getTransaction().getDestinationAccount())) == 0) {
+    if (transactionEvent.getEventType() == EventTypes.AMOUNT_SENT
+        && accountInfo.getUuid().compareTo(transactionEvent.getSender()) == 0) {
+      System.out.println("SEND event");
+    }  if (transactionEvent.getEventType() == EventTypes.AMOUNT_RECEIVED
+                  && accountInfo.getUuid()
+                         .compareTo(UUID
+                             .fromString(transactionEvent.getTransaction().getDestinationAccount())) == 0) {
       System.out.println("RECEIVE event");
-      service.receiveMoney(transactionEvent.getTransaction());
     } else if (transactionEvent.getEventType() == EventTypes.BALANCE
                && accountInfo.getUuid().compareTo(transactionEvent.getSender()) == 0) {
       System.out.println("BALANCE event");

@@ -4,6 +4,6 @@ import com.ripple.model.request.Transaction;
 import org.springframework.http.ResponseEntity;
 
 public interface ITrustLineController {
-  ResponseEntity<String> getTrustLine(String accountId);
-  ResponseEntity<String> updateOrCreateTrustline(Transaction transaction);
+  ResponseEntity<String> sendTrustline(Transaction transaction);
+  ResponseEntity<String> receiveTrustline(Transaction transaction);
 }
