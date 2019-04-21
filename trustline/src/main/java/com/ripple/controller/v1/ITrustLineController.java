@@ -5,5 +5,6 @@ import org.springframework.http.ResponseEntity;
 
 public interface ITrustLineController {
   ResponseEntity<String> sendTrustline(Transaction transaction);
+
   ResponseEntity<String> receiveTrustline(Transaction transaction);
 }

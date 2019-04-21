@@ -1,10 +1,6 @@
 package com.ripple.service.v1.impl;
 
-import static com.ripple.event.EventTypes.ACCOUNT_CREATED;
-import static com.ripple.event.EventTypes.AMOUNT_RECEIVED;
-import static com.ripple.event.EventTypes.AMOUNT_SENT;
-import static com.ripple.event.EventTypes.BALANCE;
-
+import static com.ripple.event.EventTypes.*;
 import com.ripple.event.AccountEvent;
 import com.ripple.event.TransactionEvent;
 import com.ripple.model.data.AccountInfo;
@@ -23,23 +19,21 @@ import org.springframework.web.client.RestTemplate;
 @Service
 public class TrustLineService implements ITrustLineService, ApplicationEventPublisherAware {
 
+  @Value("${trustline.service.url}")
+  String serviceURL;
+  @Value("${trustline.service.endpoint}")
+  String endpoint;
+  @Value("${client.port}")
+  String port;
   @Autowired
   private ApplicationEventPublisher publisher;
 
-  @Value("${trustline.service.url}")
-  String serviceURL;
-
-  @Value("${trustline.service.endpoint}")
-  String endpoint;
-
-
+  @Override
   public ResponseEntity<String> sendMoney(Transaction transaction) {
     AccountInfo accountInfo = AccountInfo.getInstance();
     System.out.println(transaction.getSource() + " is paying " + transaction.getDestinationAccount() + " : " + transaction.getAmount());
 
     this.publisher.publishEvent(new TransactionEvent(this, AMOUNT_SENT, transaction, accountInfo.getUuid()));
-
-    System.out.println("Sent");
 
     accountInfo.setBalance(accountInfo.getBalance().subtract(transaction.getAmount()));
     accountInfo.getTransactions().add(transaction);
@@ -49,26 +43,27 @@ public class TrustLineService implements ITrustLineService, ApplicationEventPubl
     return sendToRecepient(transaction);
   }
 
-
+  @Override
   public ResponseEntity<String> receiveMoney(Transaction transaction) {
     // TODO validate if correct account receiving money
     AccountInfo accountInfo = AccountInfo.getInstance();
     System.out.println(transaction.getSource() + " paid " + transaction.getDestinationAccount() + " : " + transaction.getAmount());
     this.publisher.publishEvent(new TransactionEvent(this, AMOUNT_RECEIVED, transaction, accountInfo.getUuid()));
-    System.out.println("Received");
+
     accountInfo.setBalance(accountInfo.getBalance().add(transaction.getAmount()));
     accountInfo.getTransactions().add(transaction);
     this.publisher.publishEvent(new TransactionEvent(this, BALANCE, transaction, accountInfo.getUuid()));
     return ResponseEntity.ok().body("success");
   }
 
-
-  public void myTrustLine(Transaction transaction) {
+  @Override
+  public void myTrustLine() {
     AccountInfo accountInfo = AccountInfo.getInstance();
     System.out.println("Trustline balance for: " + accountInfo.getUuid() + " is : " + accountInfo.getBalance());
   }
 
 
+  @Override
   public void broadcastAccountCreation() {
     TrustLine trustLine = TrustLine.getInstance();
     AccountInfo accountInfo = AccountInfo.getInstance();
@@ -78,9 +73,9 @@ public class TrustLineService implements ITrustLineService, ApplicationEventPubl
   }
 
   @Async
+  @Override
   public ResponseEntity<String> sendToRecepient(Transaction transaction) {
-    String uri = endpoint + ":9090" + serviceURL + "/receive";
-    System.out.println(uri);
+    String uri = endpoint + ":" + port + serviceURL + "/receive";
     RestTemplate restTemplate = new RestTemplate();
     return restTemplate.postForEntity(uri, transaction, String.class);
   }

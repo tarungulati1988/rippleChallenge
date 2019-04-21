@@ -1,14 +1,13 @@
 package com.ripple.model.data;
 
 import com.ripple.model.request.Transaction;
-import lombok.Getter;
-import lombok.Setter;
-
 import java.io.Serializable;
 import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
+import lombok.Getter;
+import lombok.Setter;
 
 @Getter
 @Setter
@@ -19,7 +18,7 @@ public class AccountInfo implements Serializable {
   private String accountId = new String();
   private UUID uuid = UUID.randomUUID();
 
-  private AccountInfo(){
+  private AccountInfo() {
   }
 
   synchronized public static AccountInfo getInstance() {

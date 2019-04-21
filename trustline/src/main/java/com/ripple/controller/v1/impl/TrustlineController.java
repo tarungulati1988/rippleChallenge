@@ -1,4 +1,4 @@
-package com.ripple.controller.v1.controller.impl;
+package com.ripple.controller.v1.impl;
 
 import com.ripple.controller.v1.ITrustLineController;
 import com.ripple.model.request.Transaction;
@@ -12,26 +12,25 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping(path = "/v1")
+@RequestMapping(path = "/v1/trustline")
 public class TrustlineController implements ITrustLineController {
 
   @Autowired
   private TrustLineService service;
 
   @Override
-  @PostMapping(value = "/trustline", produces = "application/json", consumes = "application/json")
+  @PostMapping(value = "/send", produces = "application/json", consumes = "application/json")
   @ResponseBody
   public ResponseEntity<String> sendTrustline(@RequestBody Transaction transaction) {
     return service.sendMoney(transaction);
   }
 
   @Override
-  @PostMapping(value = "/trustline/receive", produces = "application/json", consumes = "application/json")
+  @PostMapping(value = "/receive", produces = "application/json", consumes = "application/json")
   @ResponseBody
   public ResponseEntity<String> receiveTrustline(@RequestBody Transaction transaction) {
-    return  service.receiveMoney(transaction);
+    return service.receiveMoney(transaction);
   }
 
 
-
-  }
+}
