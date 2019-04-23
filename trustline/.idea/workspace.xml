@@ -20,11 +20,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="TrustLineService.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="TrustLineService.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/ripple/service/v1/impl/TrustLineService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="63" column="0" lean-forward="false" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
+            <state relative-caret-position="542">
+              <caret line="114" column="40" lean-forward="true" selection-start-line="114" selection-start-column="40" selection-end-line="114" selection-end-column="40" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -35,8 +35,8 @@
       <file leaf-file-name="ITrustLineService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/ripple/service/v1/ITrustLineService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="8" column="36" lean-forward="false" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
+            <state relative-caret-position="76">
+              <caret line="6" column="17" lean-forward="false" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -45,9 +45,11 @@
       <file leaf-file-name="TrustlineController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/ripple/controller/v1/impl/TrustlineController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="31" column="43" lean-forward="false" selection-start-line="31" selection-start-column="43" selection-end-line="31" selection-end-column="43" />
-              <folding />
+            <state relative-caret-position="589">
+              <caret line="31" column="25" lean-forward="false" selection-start-line="31" selection-start-column="25" selection-end-line="31" selection-end-column="25" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -82,14 +84,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TrustLineServiceTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TrustLineServiceTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/ripple/service/v1/impl/TrustLineServiceTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1254">
-              <caret line="66" column="33" lean-forward="true" selection-start-line="66" selection-start-column="33" selection-end-line="66" selection-end-column="33" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="-1331">
+              <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -149,9 +149,9 @@
         <option value="$PROJECT_DIR$/src/main/java/com/ripple/model/response/TransactionResponse.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ripple/controller/v1/ITrustLineController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ripple/service/v1/ITrustLineService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ripple/service/v1/impl/TrustLineService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ripple/controller/v1/impl/TrustlineController.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/ripple/service/v1/impl/TrustLineServiceTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ripple/controller/v1/impl/TrustlineController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ripple/service/v1/impl/TrustLineService.java" />
       </list>
     </option>
   </component>
@@ -334,7 +334,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.All in trustline (2)">
+  <component name="RunManager" selected="JUnit.All in trustline">
     <configuration name="All in trustline (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="trustline" />
@@ -375,7 +375,7 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="All in trustline (4)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="All in trustline (5)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="trustline" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -395,7 +395,7 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="All in trustline (5)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="All in trustline" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="trustline" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -529,19 +529,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Spring Boot.TrustLineApplication" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.All in trustline (4)" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.All in trustline (5)" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.All in trustline (1)" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.TrustLineServiceTest.sendMoney_positiveCase1" />
-      <item index="5" class="java.lang.String" itemvalue="JUnit.All in trustline (2)" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.All in trustline (5)" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.All in trustline (1)" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.TrustLineServiceTest.sendMoney_positiveCase1" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.All in trustline (2)" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.All in trustline" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.All in trustline (2)" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.TrustLineServiceTest.sendMoney_positiveCase1" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.All in trustline (1)" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.All in trustline (5)" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.All in trustline (4)" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.All in trustline" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.All in trustline (2)" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.TrustLineServiceTest.sendMoney_positiveCase1" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.All in trustline (1)" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.All in trustline (5)" />
       </list>
     </recent_temporary>
   </component>
@@ -563,12 +563,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1555969441974</updated>
-      <workItem from="1555969444622" duration="7757000" />
+      <workItem from="1555969444622" duration="8806000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
     <history-entry file="All_in_trustline - 2019.04.22 at 17h 44m 42s.xml">
+      <configuration name="All in trustline" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_trustline - 2019.04.23 at 13h 58m 56s.xml">
       <configuration name="All in trustline" configurationId="JUnit" />
     </history-entry>
     <history-entry file="All_in_trustline_(1) - 2019.04.22 at 17h 42m 18s.xml">
@@ -592,15 +595,12 @@
     <history-entry file="All_in_trustline_(5) - 2019.04.22 at 17h 46m 15s.xml">
       <configuration name="All in trustline (5)" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TrustLineServiceTest_sendMoney_positiveCase1 - 2019.04.22 at 17h 41m 54s.xml">
-      <configuration name="TrustLineServiceTest.sendMoney_positiveCase1" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="TrustLineServiceTest_sendMoney_positiveCase1 - 2019.04.22 at 17h 47m 55s.xml">
       <configuration name="TrustLineServiceTest.sendMoney_positiveCase1" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7757000" />
+    <option name="totallyTimeSpent" value="8806000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-2560" y="-58" width="2560" height="1440" extended-state="0" />
@@ -650,25 +650,25 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/ripple/service/v1/impl/TrustLineService.java</url>
-          <line>56</line>
+          <line>63</line>
           <properties />
           <option name="timeStamp" value="11" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/ripple/service/v1/impl/TrustLineService.java</url>
-          <line>63</line>
+          <line>76</line>
           <properties />
           <option name="timeStamp" value="12" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/ripple/service/v1/impl/TrustLineServiceTest.java</url>
-          <line>109</line>
+          <line>108</line>
           <properties />
           <option name="timeStamp" value="13" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/ripple/service/v1/impl/TrustLineServiceTest.java</url>
-          <line>73</line>
+          <line>72</line>
           <properties />
           <option name="timeStamp" value="14" />
         </line-breakpoint>
@@ -726,14 +726,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ripple/model/data/AccountInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ripple/model/data/TrustLine.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
@@ -777,36 +769,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ripple/service/v1/ITrustLineService.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/ripple/service/v1/impl/TrustLineServiceTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="8" column="36" lean-forward="false" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
+        <state relative-caret-position="-1331">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ripple/controller/v1/impl/TrustlineController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="31" column="43" lean-forward="false" selection-start-line="31" selection-start-column="43" selection-end-line="31" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ripple/service/v1/impl/TrustLineService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="63" column="0" lean-forward="false" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
+        <state relative-caret-position="589">
+          <caret line="31" column="25" lean-forward="false" selection-start-line="31" selection-start-column="25" selection-end-line="31" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/ripple/service/v1/impl/TrustLineServiceTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ripple/service/v1/ITrustLineService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1254">
-          <caret line="66" column="33" lean-forward="true" selection-start-line="66" selection-start-column="33" selection-end-line="66" selection-end-column="33" />
+        <state relative-caret-position="76">
+          <caret line="6" column="17" lean-forward="false" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ripple/model/data/AccountInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ripple/service/v1/impl/TrustLineService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="542">
+          <caret line="114" column="40" lean-forward="true" selection-start-line="114" selection-start-column="40" selection-end-line="114" selection-end-column="40" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

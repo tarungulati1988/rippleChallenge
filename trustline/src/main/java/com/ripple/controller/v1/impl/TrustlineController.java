@@ -19,6 +19,12 @@ public class TrustlineController implements ITrustLineController {
   @Autowired
   private TrustLineService service;
 
+  /**
+   * Given a transaction transfer the amount over trustline to the destination.
+   * amount, destination and source
+   * @param transaction - comprising of the amount, source and destination of the transfer
+   * @return - success on a valid transfer
+   */
   @Override
   @PostMapping(value = "/send", produces = "application/json", consumes = "application/json")
   @ResponseBody
@@ -26,6 +32,11 @@ public class TrustlineController implements ITrustLineController {
     return service.sendMoney(transaction);
   }
 
+  /**
+   * Given a transaction add the amount into personal ledger.
+   * @param transaction - transaction details containing, source, destination and amount.
+   * @return - 200/success on successful transfer
+   */
   @Override
   @PostMapping(value = "/receive", produces = "application/json", consumes = "application/json")
   @ResponseBody

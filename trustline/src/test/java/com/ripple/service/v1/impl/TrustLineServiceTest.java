@@ -4,7 +4,6 @@ import static org.junit.Assert.*;
 
 import com.ripple.event.EventTypes;
 import com.ripple.event.TransactionEvent;
-import com.ripple.model.data.TrustLine;
 import com.ripple.model.request.Transaction;
 import com.ripple.model.response.TransactionResponse;
 import org.junit.Before;
