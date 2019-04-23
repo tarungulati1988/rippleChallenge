@@ -7,9 +7,9 @@
 - POST :: http://localhost:{serverPort}/v1/trustline/send
 ```$xslt
 {
-    "amount": 10,
-    "destination": "{client_account_id}",
-    "server": "{server_account_id}",
+	"amount": 20,
+	"destination": "1a37ff4c-3f47-4c25-b889-f236f8013953",
+	"source": "eca62837-d3ea-4a83-b41e-4bee5bc6e1ea"
 }
 ```
 
