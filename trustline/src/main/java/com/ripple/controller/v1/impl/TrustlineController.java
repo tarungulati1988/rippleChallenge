@@ -2,6 +2,7 @@ package com.ripple.controller.v1.impl;
 
 import com.ripple.controller.v1.ITrustLineController;
 import com.ripple.model.request.Transaction;
+import com.ripple.model.response.TransactionResponse;
 import com.ripple.service.v1.impl.TrustLineService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -21,14 +22,14 @@ public class TrustlineController implements ITrustLineController {
   @Override
   @PostMapping(value = "/send", produces = "application/json", consumes = "application/json")
   @ResponseBody
-  public ResponseEntity<String> sendTrustline(@RequestBody Transaction transaction) {
+  public ResponseEntity<TransactionResponse> sendTrustline(@RequestBody Transaction transaction) {
     return service.sendMoney(transaction);
   }
 
   @Override
   @PostMapping(value = "/receive", produces = "application/json", consumes = "application/json")
   @ResponseBody
-  public ResponseEntity<String> receiveTrustline(@RequestBody Transaction transaction) {
+  public ResponseEntity<TransactionResponse> receiveTrustline(@RequestBody Transaction transaction) {
     return service.receiveMoney(transaction);
   }
 

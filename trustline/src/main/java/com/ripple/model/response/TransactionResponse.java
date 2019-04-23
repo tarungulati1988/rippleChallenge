@@ -17,8 +17,9 @@ import lombok.Setter;
 public class TransactionResponse extends BaseResponse {
 
   private List<Transaction> trustLines;
+  private String message;
 
-  TransactionResponse(@JsonProperty("success") Boolean success) {
+  public TransactionResponse(@JsonProperty("success") Boolean success) {
     super(success);
   }
 }
