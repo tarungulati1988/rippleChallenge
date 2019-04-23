@@ -85,8 +85,8 @@
       <file leaf-file-name="TrustLineServiceTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/ripple/service/v1/impl/TrustLineServiceTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="489">
-              <caret line="74" column="48" lean-forward="true" selection-start-line="74" selection-start-column="48" selection-end-line="74" selection-end-column="48" />
+            <state relative-caret-position="1254">
+              <caret line="66" column="33" lean-forward="true" selection-start-line="66" selection-start-column="33" selection-end-line="66" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -334,8 +334,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.All in trustline (5)">
-    <configuration name="All in trustline (2)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.All in trustline (2)">
+    <configuration name="All in trustline (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="trustline" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -355,7 +355,7 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="All in trustline (3)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="All in trustline (2)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="trustline" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -415,15 +415,26 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="All in trustline" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TrustLineApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ripple.TrustLineApplication" />
+      <module name="trustline" />
+      <envs />
+    </configuration>
+    <configuration name="TrustLineServiceTest.sendMoney_positiveCase1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.ripple.service.v1.impl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <module name="trustline" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="package" />
+      <option name="PACKAGE_NAME" value="com.ripple.service.v1.impl" />
+      <option name="MAIN_CLASS_NAME" value="com.ripple.service.v1.impl.TrustLineServiceTest" />
+      <option name="METHOD_NAME" value="sendMoney_positiveCase1" />
+      <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -434,12 +445,6 @@
       </option>
       <envs />
       <patterns />
-    </configuration>
-    <configuration name="TrustLineApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ripple.TrustLineApplication" />
-      <module name="trustline" />
-      <envs />
     </configuration>
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
@@ -524,19 +529,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Spring Boot.TrustLineApplication" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.All in trustline (2)" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.All in trustline (3)" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.All in trustline" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.All in trustline (4)" />
-      <item index="5" class="java.lang.String" itemvalue="JUnit.All in trustline (5)" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.All in trustline (4)" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.All in trustline (5)" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.All in trustline (1)" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.TrustLineServiceTest.sendMoney_positiveCase1" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.All in trustline (2)" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.All in trustline (5)" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.All in trustline (4)" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.All in trustline" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.All in trustline (3)" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.All in trustline (2)" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.All in trustline (2)" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.TrustLineServiceTest.sendMoney_positiveCase1" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.All in trustline (1)" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.All in trustline (5)" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.All in trustline (4)" />
       </list>
     </recent_temporary>
   </component>
@@ -558,21 +563,24 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1555969441974</updated>
-      <workItem from="1555969444622" duration="7631000" />
+      <workItem from="1555969444622" duration="7757000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="All_in_trustline - 2019.04.22 at 17h 35m 29s.xml">
-      <configuration name="All in trustline" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="All_in_trustline - 2019.04.22 at 17h 44m 42s.xml">
       <configuration name="All in trustline" configurationId="JUnit" />
     </history-entry>
     <history-entry file="All_in_trustline_(1) - 2019.04.22 at 17h 42m 18s.xml">
       <configuration name="All in trustline (1)" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="All_in_trustline_(1) - 2019.04.22 at 17h 47m 03s.xml">
+      <configuration name="All in trustline (1)" configurationId="JUnit" />
+    </history-entry>
     <history-entry file="All_in_trustline_(2) - 2019.04.22 at 17h 42m 36s.xml">
+      <configuration name="All in trustline (2)" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_trustline_(2) - 2019.04.22 at 17h 48m 08s.xml">
       <configuration name="All in trustline (2)" configurationId="JUnit" />
     </history-entry>
     <history-entry file="All_in_trustline_(3) - 2019.04.22 at 17h 43m 57s.xml">
@@ -581,21 +589,18 @@
     <history-entry file="All_in_trustline_(4) - 2019.04.22 at 17h 45m 29s.xml">
       <configuration name="All in trustline (4)" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TrustLineServiceTest - 2019.04.22 at 17h 36m 33s.xml">
-      <configuration name="TrustLineServiceTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TrustLineServiceTest_receiveMoney_positiveCase1 - 2019.04.22 at 17h 35m 19s.xml">
-      <configuration name="TrustLineServiceTest.receiveMoney_positiveCase1" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TrustLineServiceTest_sendMoney_positiveCase1 - 2019.04.22 at 17h 35m 54s.xml">
-      <configuration name="TrustLineServiceTest.sendMoney_positiveCase1" configurationId="JUnit" />
+    <history-entry file="All_in_trustline_(5) - 2019.04.22 at 17h 46m 15s.xml">
+      <configuration name="All in trustline (5)" configurationId="JUnit" />
     </history-entry>
     <history-entry file="TrustLineServiceTest_sendMoney_positiveCase1 - 2019.04.22 at 17h 41m 54s.xml">
       <configuration name="TrustLineServiceTest.sendMoney_positiveCase1" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="TrustLineServiceTest_sendMoney_positiveCase1 - 2019.04.22 at 17h 47m 55s.xml">
+      <configuration name="TrustLineServiceTest.sendMoney_positiveCase1" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7631000" />
+    <option name="totallyTimeSpent" value="7757000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-2560" y="-58" width="2560" height="1440" extended-state="0" />
@@ -616,7 +621,7 @@
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3296131" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3296131" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32962668" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -644,12 +649,6 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/com/ripple/service/v1/impl/TrustLineServiceTest.java</url>
-          <line>77</line>
-          <properties />
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/ripple/service/v1/impl/TrustLineService.java</url>
           <line>56</line>
           <properties />
@@ -663,12 +662,18 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/ripple/service/v1/impl/TrustLineServiceTest.java</url>
-          <line>113</line>
+          <line>109</line>
           <properties />
           <option name="timeStamp" value="13" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/ripple/service/v1/impl/TrustLineServiceTest.java</url>
+          <line>73</line>
+          <properties />
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="14" />
+      <option name="time" value="15" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -800,8 +805,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/ripple/service/v1/impl/TrustLineServiceTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="489">
-          <caret line="74" column="48" lean-forward="true" selection-start-line="74" selection-start-column="48" selection-end-line="74" selection-end-column="48" />
+        <state relative-caret-position="1254">
+          <caret line="66" column="33" lean-forward="true" selection-start-line="66" selection-start-column="33" selection-end-line="66" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

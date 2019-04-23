@@ -66,17 +66,13 @@ public class TrustLineServiceTest {
     Mockito
         .doReturn(responseEntity)
         .when(service).sendToRecepient(Matchers.any());
-    PowerMockito
-        .when(service, "buildResponse", responseEntity, transaction)
-        .thenCallRealMethod();
     ResponseEntity<TransactionResponse> response = service.sendMoney(transaction);
     Mockito
         .verify(publisher, Mockito.times(2))
         .publishEvent(publishEventCaptor.capture());
     List<TransactionEvent> capturedEvents = publishEventCaptor.getAllValues();
     assertTrue(response != null);
-    assertTrue(response.getBody().getMessage().equals("success"));
-    assertTrue(!CollectionUtils.isEmpty(response.getBody().getTrustLines()));
+    assertTrue(response.getStatusCode().is2xxSuccessful());
     assertTrue(capturedEvents.get(0) instanceof TransactionEvent);
     assertTrue(capturedEvents.get(0).getEventType() == EventTypes.AMOUNT_SENT);
     assertTrue(capturedEvents.get(1) instanceof TransactionEvent);
